@@ -8,7 +8,7 @@ Make one module from an application for renting books from a certain one library
 - Delete books that are no longer in good condition and will not be rented
 - To modify a certain entry for a book
 - To mark a certain book as rented
-- 
+
 What you will need is a Spring Boot application, ie an API that you will create according to the relevant requirements, as well as the React application which will be in charge of displaying the data and user interaction. Additionally, in terms of the database, you can use PostgreSQL (as in auditory exercises), but you can also use MySQL and others.
 
 The following book data is stored within the application: id (Long), name (String), category (enum), author (Author), availableCopies (Integer). The book category can be: NOVEL, THRILER, HISTORY, FANTASY, BIOGRAPHY, CLASSICS, DRAMA. For each author again store data: id (Long), name (String), surname (String), country (Country). They are for every country store data: id (Long), name (String), continent (String).
@@ -19,10 +19,15 @@ The React application should be the one that will make the appropriate requests 
 
 This application should look similar to the application of auditory exercises, that is:
   - All books are displayed on the home page (can be seen on the path / and /books)
-    o Edit, Delete, Mark As Taken buttons are provided for each book
-    o Click on the Edit / Delete buttons to call the API and to do so edit / delete the book
-    o Click the Mark As Taken button, you need to make a call to the API and reduce the number of availableCopies accordingly
-    o Additionally there is an Add a new book button, which allows adding of a new book
+  
+    -- Edit, Delete, Mark As Taken buttons are provided for each book
+    
+    -- Click on the Edit / Delete buttons to call the API and to do so edit / delete the book
+    
+    -- Click the Mark As Taken button, you need to make a call to the API and reduce the number of Available Copies accordingly
+    
+    -- Additionally there is an Add a new book button, which allows adding of a new book
+    
   - On the other side are displayed all the categories (can be seen on the path /categories)
   - There is a header section which is actually a navigation menu
   
