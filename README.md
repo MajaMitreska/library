@@ -1,6 +1,6 @@
 # library
 
-Solution of the second homework of EMT.
+Solution of the second homework of EMT(Electronic and mobile commerce).
 
 TODO:
 Make one module from an application for renting books from a certain one library, ie the module that would be used by a user with a role librarian, who would have several privileges:
